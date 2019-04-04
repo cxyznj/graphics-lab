@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/new/images">
+        <file>../../icon/icons8-0-percent-32.png</file>
+        <file>../../icon/icons8-3d-32.png</file>
+        <file>../../icon/icons8-broom-32.png</file>
+        <file>../../icon/icons8-cancel-32.png</file>
+        <file>../../icon/icons8-erase-32.png</file>
+        <file>../../icon/icons8-fill-color-32.png</file>
+        <file>../../icon/icons8-line-512.png</file>
+        <file>../../icon/icons8-opened-folder-32.png</file>
+        <file>../../icon/icons8-oval-32.png</file>
+        <file>../../icon/icons8-paint-palette-32.png</file>
+        <file>../../icon/icons8-polygon-32.png</file>
+        <file>../../icon/icons8-question-mark-32.png</file>
+        <file>../../icon/icons8-rectangular-32.png</file>
+        <file>../../icon/icons8-save-as-32.png</file>
+        <file>../../icon/icons8-scissors-32.png</file>
+        <file>../../icon/icons8-trash-32.png</file>
+        <file>../../icon/icons8-undo-32.png</file>
+        <file>../../icon/Curved_line.png</file>
+    </qresource>
+</RCC>

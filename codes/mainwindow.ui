@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Draw">
+    <property name="title">
+     <string>&amp;Draw</string>
+    </property>
+    <addaction name="action_DrawLine"/>
+    <addaction name="action_DrawCircle"/>
+    <addaction name="action_DrawEllipse"/>
+    <addaction name="action_DrawRectangle"/>
+    <addaction name="separator"/>
+    <addaction name="actionPolygon"/>
+    <addaction name="separator"/>
+    <addaction name="action_Quadratic_B_zier_curves"/>
+    <addaction name="action_Cubic_B_zier_curves"/>
+   </widget>
+   <widget class="QMenu" name="menu_Tool">
+    <property name="title">
+     <string>&amp;Tools</string>
+    </property>
+    <addaction name="action_Cut"/>
+    <addaction name="actionColor"/>
+    <addaction name="actionChange_Color"/>
+    <addaction name="action_remove"/>
+    <addaction name="separator"/>
+    <addaction name="action_Undo"/>
+    <addaction name="actionInitialize"/>
+    <addaction name="actionCancel_All_States"/>
+   </widget>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_Save"/>
+    <addaction name="separator"/>
+    <addaction name="action_Load"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpen3D"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionHow_to_use"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Draw"/>
+   <addaction name="menu_Tool"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_DrawLine">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/images/icon/icons8-line-512.png</normaloff>:/new/images/icon/icons8-line-512.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Line</string>
+   </property>
+  </action>
+  <action name="action_DrawCircle">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/images/icon/icons8-0-percent-32.png</normaloff>:/new/images/icon/icons8-0-percent-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Circle</string>
+   </property>
+  </action>
+  <action name="action_DrawEllipse">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/images/icon/icons8-oval-32.png</normaloff>:/new/images/icon/icons8-oval-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Ellipse</string>
+   </property>
+  </action>
+  <action name="action_DrawRectangle">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/images/icon/icons8-rectangular-32.png</normaloff>:/new/images/icon/icons8-rectangular-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Rectangle</string>
+   </property>
+  </action>
+  <action name="action_Undo">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/images/icon/icons8-undo-32.png</normaloff>:/new/images/icon/icons8-undo-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Undo</string>
+   </property>
+  </action>
+  <action name="action_remove">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/images/icon/icons8-erase-32.png</normaloff>:/new/images/icon/icons8-erase-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Remove</string>
+   </property>
+  </action>
+  <action name="actionColor">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/images/icon/icons8-fill-color-32.png</normaloff>:/new/images/icon/icons8-fill-color-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Fill Color</string>
+   </property>
+  </action>
+  <action name="actionChange_Color">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/images/icon/icons8-paint-palette-32.png</normaloff>:/new/images/icon/icons8-paint-palette-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Change Color</string>
+   </property>
+  </action>
+  <action name="actionPolygon">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/images/icon/icons8-polygon-32.png</normaloff>:/new/images/icon/icons8-polygon-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Polygon</string>
+   </property>
+  </action>
+  <action name="action_Save">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/images/icon/icons8-save-as-32.png</normaloff>:/new/images/icon/icons8-save-as-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save</string>
+   </property>
+  </action>
+  <action name="action_Load">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/images/icon/icons8-opened-folder-32.png</normaloff>:/new/images/icon/icons8-opened-folder-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Load</string>
+   </property>
+  </action>
+  <action name="action_Quadratic_B_zier_curves">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/images/icon/Curved_line.png</normaloff>:/new/images/icon/Curved_line.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Quadratic Bézier curves</string>
+   </property>
+  </action>
+  <action name="action_Cubic_B_zier_curves">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/images/icon/Curved_line.png</normaloff>:/new/images/icon/Curved_line.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Cubic Bézier curves</string>
+   </property>
+  </action>
+  <action name="action_Cut">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/images/icon/icons8-scissors-32.png</normaloff>:/new/images/icon/icons8-scissors-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Cut</string>
+   </property>
+  </action>
+  <action name="actionOpen3D">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/images/icon/icons8-3d-32.png</normaloff>:/new/images/icon/icons8-3d-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Open3D</string>
+   </property>
+  </action>
+  <action name="actionHow_to_use">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/images/icon/icons8-question-mark-32.png</normaloff>:/new/images/icon/icons8-question-mark-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;How to use?</string>
+   </property>
+  </action>
+  <action name="actionInitialize">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/images/icon/icons8-broom-32.png</normaloff>:/new/images/icon/icons8-broom-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Clear Board</string>
+   </property>
+  </action>
+  <action name="actionCancel_All_States">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/images/icon/icons8-cancel-32.png</normaloff>:/new/images/icon/icons8-cancel-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Cancel All States</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
